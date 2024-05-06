@@ -1,0 +1,43 @@
+<div class="accordion-handler" data-bs-theme="dark">
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            Registration
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <!-- v-vvv-v -> Inputchalar-->
+            <div class="input-group flex-nowrap">
+              <span class="input-group-text" id="addon-wrapping">Username</span>
+              <input [(ngModel)]="getTokenRequest.userName" type="text" class="form-control" placeholder="Username" aria-label="Username"
+                aria-describedby="addon-wrapping">
+            </div>
+            <div class="input-group flex-nowrap">
+              <span class="input-group-text" id="addon-wrapping">Role</span>
+              <input [(ngModel)]="getTokenRequest.role" type="text" class="form-control" placeholder="Role" aria-label="Username"
+                aria-describedby="addon-wrapping">
+            </div>
+            <div class="button-div">
+              <button (click)="login()" class="btn btn-primary">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            LogIn
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <strong>APIni Login qismi yoq!</strong>Registratsiya qilinganda bira tolasi Login ham boladi
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
